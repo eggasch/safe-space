@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildanzeige</title>
+</head>
+<body>
+    <img id="bildAnzeige" src="" alt="Bild">
+    <script>
+        var bilder = [
+            'NO1.JPG',
+            'NO2.jpg',
+            'NO3.jpeg',
+            'NO4.jpeg',
+            'NO5.jpeg',
+            'NO6.jpeg',
+            'NO7.jpeg',
+            'NO8.jpeg',
+            'NO9.jpeg',
+            'NO10.jpeg',
+            'NO11.jpeg',
+            'NO12.jpeg',
+            'NO13.jpg',
+            'NO14.jpg',
+            'NO15.png',
+            'NO16.jpeg',
+            'NO17.jpeg',
+            'NO18.jpeg',
+            'NO19.jpg',
+            'NO20.jpeg',
+            'NO21.jpeg',
+            'NO22.jpg',
+            'NO23.jpeg',
+            'NO24.png',
+        ];
+
+        var zufallsIndex = Math.floor(Math.random() * bilder.length);
+        var zufallsBild = bilder[zufallsIndex];
+
+        document.getElementById('bildAnzeige').src = zufallsBild;
+    </script>
+</body>
+</html>
